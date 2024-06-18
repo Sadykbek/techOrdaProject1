@@ -13,6 +13,11 @@ FAQHeaders.forEach((header) => {
   header.addEventListener("click", function () {
     const isactiveFAQ = header.classList.contains("activeFAQ");
     toggleactiveFAQ(header, !isactiveFAQ);
+    FAQHeaders.forEach((header) => {
+      if (header !== this) {
+        toggleactiveFAQ(header, false);
+      }
+    })
   });
 });
 

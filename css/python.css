@@ -21,6 +21,11 @@
    background-repeat: no-repeat;
    background-position: top right;
 }
+@media(max-width: 1400px){
+   .banner{
+      background-image: none;
+   }
+}
 .bansec{
    background-color: white;
    margin-top: 92px;
@@ -128,4 +133,310 @@ margin-bottom: 77px;
 .banner_button:hover{
 background: var(--gradient);
 cursor: pointer;
+}
+.bansec-bot{
+   background: var(--gradient);
+   padding: 14px 43px;
+   border-radius: 0 0 20px 20px;
+}
+
+
+.bansec-bor-text {
+   font-family: 'Inter';
+font-size: 30px;
+font-weight: 300;
+line-height: 39px;
+text-align: left;
+color: white;
+}
+
+.bansec-bor-heading{
+   padding-top: 7px;
+   font-family: 'Inter';
+font-size: 30px;
+font-weight: 700;
+line-height: 39px;
+text-align: left;
+color: white;
+}
+.vertical-line{
+   width: 1px;
+   height: 100px;
+   background: #F5F5F5;
+padding: 0;
+}
+.goals{
+   background:  linear-gradient(92.87deg, #2B8F27 0%, #2500FF 112.08%);
+   padding: 90px 0;
+}
+.goals-bg{
+   position: relative;
+}
+.goals-text{
+   font-family: 'Inter';
+font-size: 30px;
+font-weight: 400;
+line-height: 39px;
+text-align: left;
+color: white;
+}
+.goals-heading{
+   font-family: 'Inter';
+font-size: 86px;
+font-weight: 700;
+line-height: 111.8px;
+text-align: left;
+color: white;
+border-bottom: 3px solid white;
+width: 500px;
+margin-bottom: 50px;
+}
+.goals-img{
+   position: absolute;
+   left: -5vw;
+   top: 0;
+   width: 150%;
+   height: 70vh;
+   background-image: url('../img/goals/pythonGoals.png');
+   background-repeat: no-repeat;
+   mix-blend-mode: luminosity; /* Эффект освещенности */
+   filter: brightness(1); /* Усиление эффекта */
+}
+@media (max-width: 1950) {
+   .goals-img{
+      
+      left: -13vw;
+   }
+}
+@media (max-width: 1780px) and (min-width: 1550px) {
+   .goals-img{
+      
+      left: -13vw;
+   }
+}
+@media (max-width: 1550px) and (min-width: 1200px) {
+   .goals-img{
+      background-size: cover;
+      width: 110%;
+      height: 40vh;
+      left: -13vw;
+   }
+}
+@media (max-width: 1200px) {
+   .goals-img{
+     display: none;
+   }
+}
+.who{
+   padding: 75px 0;
+}
+.who-heading{
+   font-family: Inter;
+font-size: 86px;
+font-weight: 700;
+line-height: 111.8px;
+text-align: left;
+margin-bottom: 52px;
+}
+.who-circle{
+   height: 95px;
+   width: 95px;
+  
+   background: linear-gradient(92.87deg, #2B8F27 0%, #2500FF 112.08%);
+display: flex; border-radius: 50%;
+justify-content: center;
+align-items: center;
+font-family: 'Inter';
+font-size: 46px;
+font-weight: 700;
+line-height: 46px;
+color: white;
+margin-right: 40px;
+}
+.who-text_heading{
+   font-family: 'Inter';
+font-size: 25px;
+font-weight: 700;
+line-height: 32.5px;
+text-align: left;
+margin-bottom: 9px;
+}
+.who-text_reg{
+   font-family: 'Inter';
+font-size: 20px;
+font-weight: 400;
+line-height: 26px;
+text-align: left;
+margin-bottom: 116px;
+}
+.who-stat-item{
+   position: relative;
+
+   height: 181px;
+   width: 100%;
+   justify-content: center;
+   align-items: center;
+   padding: 6px; /* пространство для границы */
+   border-radius: 30px; /* радиус закругления */
+   background: linear-gradient(to right, #1A00B0, #37DB30); /* градиент */
+   -webkit-background-clip: padding-box; /* поддержка для WebKit-браузеров */
+   background-clip: padding-box; /* для остальных браузеров */
+   box-sizing: border-box; /* учитывать padding в размер элемента */
+   margin-bottom: 20px;
+}
+
+.who-stat-item-inner {
+   font-family: 'Inter';
+font-size: 86px;
+font-weight: 700;
+text-align: left;
+display: flex;
+height: 181px;
+width: 500px;
+justify-content: center;
+align-items: center;
+   width: 100%;
+   height: 100%;
+   background: white;
+   border-radius: 24px; /* радиус закругления на 6px меньше чем у внешнего элемента */
+  }
+.who-stat-text{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: Inter;
+font-size: 26px;
+font-weight: 400;
+line-height: 33.8px;
+text-align: left;
+gap: 8px;
+
+}
+.criteries-heading{
+   font-family: 'Inter';
+font-size: 86px;
+font-weight: 700;
+line-height: 111.8px;
+text-align: left;
+margin-bottom: 68px;
+}
+.criteries-item {
+   background-color: white;
+   height: 262px;
+   padding-top: 64px;
+   padding-left: 23px;
+   padding-right: 29px;
+   border-radius: 20px;
+   margin-bottom: 65px;
+
+}
+.criteries-item1{
+   position: relative;
+}
+.criteries-item1::before{
+    content: "";
+   position: absolute;
+   top: -25px;
+   left: 23px;
+  display: block;
+  width: 65px;
+  height: 65px;
+  background-image: url('../img/criteries/criteries1.png');
+}
+.criteries-item2{
+   position: relative;
+}
+.criteries-item2::before{
+    content: "";
+   position: absolute;
+   top: -25px;
+   left: 23px;
+  display: block;
+  width: 65px;
+  height: 65px;
+  background-image: url('../img/criteries/criteries2.png');
+}
+.criteries-item3{
+   position: relative;
+}
+.criteries-item3::before{
+    content: "";
+   position: absolute;
+   top: -25px;
+   left: 23px;
+  display: block;
+  width: 65px;
+  height: 65px;
+  background-image: url('../img/criteries/criteries3.png');
+}
+.criteries-item4{
+   position: relative;
+}
+.criteries-item4::before{
+    content: "";
+   position: absolute;
+   top: -25px;
+   left: 23px;
+  display: block;
+  width: 65px;
+  height: 65px;
+  background-image: url('../img/criteries/criteries4.png');
+}
+.criteries-item5{
+   position: relative;
+}
+.criteries-item5::before{
+    content: "";
+   position: absolute;
+   top: -25px;
+   left: 23px;
+  display: block;
+  width: 65px;
+  height: 65px;
+  background-image: url('../img/criteries/criteries5.png');
+}
+.criteries-item6{
+   position: relative;
+}
+.criteries-item6::before{
+    content: "";
+   position: absolute;
+   top: -25px;
+   left: 23px;
+  display: block;
+  width: 65px;
+  height: 65px;
+  background-image: url('../img/criteries/criteries6.png');
+}
+.criteries-item-heading {
+   font-family: 'Inter';
+font-size: 30px;  
+font-weight: 700;
+margin-bottom: 16px;
+background: var(--gradient); /* Задаем градиент */
+-webkit-background-clip: text; /* Обрезаем фон до текста */
+-webkit-text-fill-color: transparent; /* Делаем текст прозрачным */
+}
+.criteries-item-text {
+   font-family: 'Inter';
+font-size: 18px;
+line-height: 23.4px;
+}
+.increase{
+   background-color: white;
+   padding-top: 80px;
+      border-radius: 20px;
+}
+.increase-heading{
+   font-family: 'Inter';
+   font-weight: 700;
+   font-size: 86px;
+   line-height: 111.8px;
+   margin-left: 28px;
+
+}
+.increase-heading span{
+   background: var(--gradient); /* Задаем градиент */
+-webkit-background-clip: text; /* Обрезаем фон до текста */
+-webkit-text-fill-color: transparent; /* Делаем текст прозрачным */
 }
